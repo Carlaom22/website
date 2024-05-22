@@ -1,61 +1,107 @@
-body {
-    background-color: #000;
-    color: #0f0;
-    font-family: 'Courier New', Courier, monospace;
+body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .full-page {
-    min-height: 100vh;
-    padding-top: 60px; /* altura da navbar */
-    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+.header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.logo {
-    color: #0f0;
-    text-decoration: none;
-    font-size: 24px;
+    background-color: #000;
+    padding: 20px 0;
 }
 
 .nav-links {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .nav-links li {
     display: inline;
+    margin-right: 20px;
 }
 
 .nav-links li a {
     color: #0f0;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 18px;
 }
 
 .nav-links li a:hover {
     border-bottom: 2px solid #0f0;
+}
+
+.section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.work {
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    margin: 10px;
+    border: 1px solid #0f0;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #0f0;
+    background-color: transparent;
+    color: #0f0;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0f0;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #090;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #0f0;
+    width: 100%;
 }
