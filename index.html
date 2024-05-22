@@ -4,127 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Pessoal Futurista</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #0f0;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        header {
-            text-align: center;
-            padding: 50px 0;
-            opacity: 0;
-            animation: fadeIn 2s ease-out forwards;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-        p {
-            font-size: 18px;
-        }
-        section {
-            padding: 20px;
-            opacity: 0;
-            animation: fadeInUp 1s ease-out forwards;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .work {
-            border-bottom: 1px solid #0f0;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-            cursor: pointer;
-            transition: transform 0.3s ease-out;
-        }
-        .work:hover {
-            transform: scale(1.05);
-        }
-        .work h3 {
-            font-size: 24px;
-            margin-top: 0;
-            cursor: pointer;
-        }
-        .work p {
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            opacity: 0;
-            animation: fadeIn 2s ease-out forwards;
-        }
-        a {
-            color: #0f0;
-            text-decoration: none;
-            border-bottom: 1px solid #0f0;
-            transition: border-bottom 0.3s ease-out;
-        }
-        a:hover {
-            border-bottom: 2px solid #0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Matrix</h1>
-        <p>Eu sou [O SEU NOME], e este é o meu mundo digital.</p>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Página Pessoal</a>
+                <ul class="nav-links">
+                    <li><a href="#quem-sou-eu">Quem Sou Eu</a></li>
+                    <li><a href="#trabalhos">Trabalhos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section class="container">
-        <h2>Quem Sou Eu</h2>
-        <p>[Alguma informação sobre ti, interesses, habilidades, etc.]</p>
-    </section>
+    <div class="full-page">
+        <section id="quem-sou-eu" class="container">
+            <h2>Quem Sou Eu</h2>
+            <p>[Alguma informação sobre ti, interesses, habilidades, etc.]</p>
+        </section>
 
-    <section class="container">
-        <h2>Trabalhos Pessoais</h2>
-        <div class="work" onclick="toggleDescription(this)">
-            <h3>Projeto 1</h3>
-            <p style="display: none;">Descrição do Projeto 1.</p>
-        </div>
-        <div class="work" onclick="toggleDescription(this)">
-            <h3>Projeto 2</h3>
-            <p style="display: none;">Descrição do Projeto 2.</p>
-        </div>
-        <!-- Adiciona mais trabalhos pessoais conforme necessário -->
-    </section>
+        <section id="trabalhos" class="container">
+            <h2>Trabalhos Pessoais</h2>
+            <div class="work" onclick="toggleDescription(this)">
+                <h3>Projeto 1</h3>
+                <p style="display: none;">Descrição do Projeto 1.</p>
+            </div>
+            <div class="work" onclick="toggleDescription(this)">
+                <h3>Projeto 2</h3>
+                <p style="display: none;">Descrição do Projeto 2.</p>
+            </div>
+            <!-- Adiciona mais trabalhos pessoais conforme necessário -->
+        </section>
 
-    <footer>
-        <p>© 2024 Página Pessoal Futurista - <a href="#">[O SEU NOME]</a></p>
-    </footer>
+        <section id="galeria" class="container">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/200" alt="Imagem 1">
+                <img src="https://via.placeholder.com/200" alt="Imagem 2">
+                <img src="https://via.placeholder.com/200" alt="Imagem 3">
+                <!-- Adiciona mais imagens conforme necessário -->
+            </div>
+        </section>
 
-    <script>
-        function toggleDescription(element) {
-            var description = element.querySelector('p');
-            if (description.style.display === 'none') {
-                description.style.display = 'block';
-            } else {
-                description.style.display = 'none';
-            }
-        }
-    </script>
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Email">
+                <textarea placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Página Pessoal Futurista - <a href="#">[O SEU NOME]</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
