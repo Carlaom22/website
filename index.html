@@ -12,18 +12,20 @@
             <div class="container">
                 <a href="#" class="logo">Página Pessoal</a>
                 <ul class="nav-links">
-                    <li><a href="#quem-sou-eu">Quem Sou Eu</a></li>
+                    <li><a href="#apresentação">Apresentação</a></li>
                     <li><a href="#trabalhos">Trabalhos</a></li>
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testemunhos">Testemunhos</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <div class="full-page">
-        <section id="quem-sou-eu" class="container section">
-            <h2>Quem Sou Eu</h2>
+        <section id="apresentação" class="container section">
+            <h2>Apresentação</h2>
             <p>[Alguma informação sobre ti, interesses, habilidades, etc.]</p>
         </section>
 
@@ -60,11 +62,45 @@
             </div>
         </section>
 
+        <section id="blog" class="container section">
+            <h2>Blog</h2>
+            <p>Aqui você encontrará artigos, tutoriais e insights sobre tecnologia, design e desenvolvimento web.</p>
+            <!-- Adicione os artigos do blog conforme necessário -->
+        </section>
+
+        <section id="testemunhos" class="container section">
+            <h2>Testemunhos</h2>
+            <div class="testimonials">
+                <blockquote>
+                    <p>Carlos é um profissional incrível! Seu trabalho superou todas as minhas expectativas.</p>
+                    <cite>João Silva</cite>
+                </blockquote>
+                <!-- Adicione mais testemunhos conforme necessário -->
+            </div>
+        </section>
+
+        <section id="jogo-da-velha" class="container section">
+            <h2>Jogo da Velha</h2>
+            <div id="message">É a vez do jogador X</div>
+            <div class="board">
+                <div class="square" onclick="handleSquareClick(0)"></div>
+                <div class="square" onclick="handleSquareClick(1)"></div>
+                <div class="square" onclick="handleSquareClick(2)"></div>
+                <div class="square" onclick="handleSquareClick(3)"></div>
+                <div class="square" onclick="handleSquareClick(4)"></div>
+                <div class="square" onclick="handleSquareClick(5)"></div>
+                <div class="square" onclick="handleSquareClick(6)"></div>
+                <div class="square" onclick="handleSquareClick(7)"></div>
+                <div class="square" onclick="handleSquareClick(8)"></div>
+            </div>
+        </section>
+
         <footer class="container">
-            <p>© 2024 Página Pessoal Futurista - <a href="#">[O SEU NOME]</a></p>
+            <p>© 2024 Página Pessoal Futurista - <a href="#">Carlos Soares</a></p>
         </footer>
     </div>
 
     <script src="animations.js"></script>
+    <script src="tictactoe.js"></script>
 </body>
 </html>

@@ -107,3 +107,26 @@ footer {
     color: #0f0;
     width: 100%;
 }
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    color: #0f0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: #222;
+}
+
