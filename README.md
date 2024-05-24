@@ -32,4 +32,4 @@ Carlos Soares - [Portefólio](https://imcsm.com)
 
 ## Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+Pode passar.
