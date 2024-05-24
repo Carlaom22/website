@@ -1,7 +1,7 @@
 # Página Pessoal Futurista
 
-Esta é uma página pessoal futurista criada com HTML, CSS e JavaScript. Apresenta informações sobre Carlos Soares, os seus trabalhos pessoais, uma galeria de imagens e um formulário de contacto.
-É tão futurista que só vai funcionar no futuro.
+<h1> Esta é uma página pessoal futurista criada com HTML, CSS e JavaScript. Apresenta informações sobre Carlos Soares, os seus trabalhos pessoais, uma galeria de imagens e um formulário de contacto.</h1>
+<h2> É tão futurista que só vai funcionar no futuro. </h2>
 
 ## Conteúdo
 
