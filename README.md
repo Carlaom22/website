@@ -13,8 +13,8 @@
 
 ## Apresentação
 
-<h1>Olá! O meu nome é Carlos Soares. Sou um entusiasta de tecnologia apaixonado por desenvolvimento web, design e criação de conteúdo digital. Nesta secção, encontrará mais informações sobre mim e os meus interesses.</h1>
-<h2>Entusiasta =! Bom</h2>
+<p>Olá! O meu nome é Carlos Soares. Sou um entusiasta de tecnologia apaixonado por desenvolvimento web, design e criação de conteúdo digital. Nesta secção, encontrará mais informações sobre mim e os meus interesses.</p>
+<p>Entusiasta =! Bom</p>
 
 ## Trabalhos Pessoais
 
